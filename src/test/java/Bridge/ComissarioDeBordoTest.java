@@ -17,7 +17,7 @@ public class ComissarioDeBordoTest {
     
     @Test
     void retornaSalarioComissarioDeBordoComINVA() {
-        Especializacao especializacao = new IFR();
+        Especializacao especializacao = new INVA();
         ComissarioDeBordo comissarioDeBordo = new ComissarioDeBordo(10000);
         comissarioDeBordo.setEspecializacao(especializacao);
         assertEquals(12000.0f, comissarioDeBordo.calcularSalario());
@@ -25,7 +25,7 @@ public class ComissarioDeBordoTest {
     
     @Test
     void retornaSalarioComissarioDeBordoComMLTE() {
-        Especializacao especializacao = new IFR();
+        Especializacao especializacao = new MLTE();
         ComissarioDeBordo comissarioDeBordo = new ComissarioDeBordo(10000);
         comissarioDeBordo.setEspecializacao(especializacao);
         assertEquals(12000.0f, comissarioDeBordo.calcularSalario());

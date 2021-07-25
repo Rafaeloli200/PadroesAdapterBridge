@@ -17,7 +17,7 @@ public class PilotoTest {
     
     @Test
     void retornaSalarioPilotoComINVA() {
-        Especializacao especializacao = new IFR();
+        Especializacao especializacao = new INVA();
         Piloto piloto = new Piloto(10000);
         piloto.setEspecializacao(especializacao);
         assertEquals(14000.0f, piloto.calcularSalario());
@@ -25,7 +25,7 @@ public class PilotoTest {
     
     @Test
     void retornaSalarioPilotoComMLTE() {
-        Especializacao especializacao = new IFR();
+        Especializacao especializacao = new MLTE();
         Piloto piloto = new Piloto(10000);
         piloto.setEspecializacao(especializacao);
         assertEquals(16000.0f, piloto.calcularSalario());
